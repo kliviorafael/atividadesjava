@@ -1,0 +1,32 @@
+package exerciciotrianguloo;
+
+import java.util.Scanner;
+
+public class ExercicioTriangulo {
+	
+	public static void main (String args []) {
+		
+		Scanner ler = new Scanner(System.in);
+		int lado_a; 
+		int lado_b;
+		int lado_c; 
+		
+		// Pega lados do triângulo 
+		System.out.print("Digite o primeiro valor:  ");
+		lado_a = ler.nextInt(); 
+		
+		System.out.print("Digite o segundo valor:   "); 
+		lado_b = ler.nextInt(); 
+		
+		System.out.print("Digite o terceiro valor:  "); 
+		lado_c = ler.nextInt(); 
+		
+		// Condição 
+		
+		if (lado_a < lado_b + lado_c && lado_b < lado_a + lado_c && lado_c < lado_b + lado_a) {
+			System.out.print("Triangulo Válido");
+		} else {
+			System.out.print("Triangulo Inválido");
+		}
+	}
+}
