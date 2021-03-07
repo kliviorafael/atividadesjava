@@ -1,0 +1,38 @@
+package exerciciolutador;
+
+import java.util.Scanner; 
+
+public class ExercicioLutador {
+	
+	public static void main (String args []) {
+		
+		Scanner ler = new Scanner (System.in); 
+		
+		int peso; 
+		String nome; 
+		
+		// Pegar dados
+		System.out.print("Digie o nome do lutador: ");
+		nome = ler.next();
+		
+		System.out.print("Digie o peso do lutador:  ");
+		peso = ler.nextInt(); 
+		
+		if (peso <= 65) {
+			System.out.print("O lutador " + nome + " pertence a classificação peso pena");
+		} else if (peso <= 72) {
+			System.out.print("O lutador " + nome + " pertence a classificação peso leve");
+		} else if (peso <= 79) {
+			System.out.print("O lutador " + nome + " pertence a classificação peso ligeiro");
+		} else if (peso <= 86) {
+			System.out.print("O lutador " + nome + " pertence a classificação peso meio-medio");
+		} else if (peso <= 93) {
+			System.out.print("O lutador " + nome + " pertence a classificação peso médio");
+		} else if (peso <= 100) {
+			System.out.print("O lutador " + nome + " pertence a classificação peso meio-pesado");
+		} else if (peso > 100) {
+			System.out.print("O lutador " + nome + " pertence a classificação peso pesado");
+		}	
+		}
+		
+	}
