@@ -28,5 +28,14 @@ public class ExercicioTriangulo {
 		} else {
 			System.out.print("Triangulo Inválido");
 		}
+		
+		
+		if (lado_a == lado_b && lado_b == lado_c && lado_c == lado_a) {
+			System.out.print("Triangulo Equilatero");
+		} else if (lado_a == lado_b || lado_b == lado_c || lado_c == lado_a) {
+			System.out.print("Triangulo Isosceles");	
+		} else if (lado_a != lado_b && lado_b != lado_c && lado_c != lado_a) {
+			System.out.print("Triangulo Escaleno");
+		}
 	}
 }
